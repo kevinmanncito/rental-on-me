@@ -110,6 +110,13 @@ body {
   /*box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);*/
 }
 
+/* 
+ * Navbar 
+ */
+
+ .navbar {margin-bottom: 0;}
+ .navbar-default {margin-bottom: 0;}
+
 @media (min-width: 768px) {
   .masthead-brand {
     float: left;
