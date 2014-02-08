@@ -35,18 +35,17 @@
         <li><a href="#fakelink">FAQs</a></li>
       </ul>           
         <!-- Default look -->
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="dashboard.html">View Profile</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="loggedOut.html">Logout</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="navbar-form" role="form">
+        <div class="navbar-right">
+          <div class="form-group">
+            <input type="text" placeholder="Email" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" class="form-control">
+          </div>
+          <a href="index.html"><button class="btn btn-primary btn-embossed">Sign in</button></a>
+        </div>
+      </div>
     </div><!-- /.navbar-collapse -->
   </nav><!-- /navbar -->
   <div class="site-wrapper">
@@ -58,7 +57,7 @@
           <p class="lead">
             <div class="navbar-form" role="form">
               <div class="form-group">
-                <input type="text" placeholder="What are you looking for?" class="input-hg form-control">
+                <input type="text" placeholder="Search again" class="input-hg form-control">
               </div>
               <select multiple="multiple">
                 <option value="0" selected>All Categories</option>

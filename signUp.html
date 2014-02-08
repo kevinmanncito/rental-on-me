@@ -31,44 +31,35 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-01">
       <ul class="nav navbar-nav">           
-        <li><a href="signUp.html">Sign Up</a></li>
+        <li class="active"><a href="signUp.html">Sign Up</a></li>
         <li><a href="#fakelink">FAQs</a></li>
       </ul>           
         <!-- Default look -->
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="dashboard.html">View Profile</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="loggedOut.html">Logout</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="navbar-form" role="form">
+        <div class="navbar-right">
+          <div class="form-group">
+            <input type="text" placeholder="Email" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" class="form-control">
+          </div>
+          <a href="index.html"><button class="btn btn-primary btn-embossed">Sign in</button></a>
+        </div>
+      </div>
     </div><!-- /.navbar-collapse -->
   </nav><!-- /navbar -->
   <div class="site-wrapper">
     <div class="site-wrapper-inner">
       <div class="cover-container">
         <div class="inner cover caption">
-          <h1 class="cover-heading">Rent. Anything.</h1>
-          <p class="lead">Search for anything to rent in or rent out. This is the holy grail of rentals.</p>
+          <h1 class="cover-heading">Sign Up!</h1>
+          <p class="lead">Please create an account to rent out items and rent from others.</p>
           <p class="lead">
-            <div class="navbar-form" role="form">
-              <div class="form-group">
-                <input type="text" placeholder="What are you looking for?" class="input-hg form-control">
-              </div>
-              <select multiple="multiple">
-                <option value="0" selected>All Categories</option>
-                <option value="1">Tools</option>
-                <option value="2">Sports Equipment</option>
-                <option value="3">Electronics</option>
-                <option value="4">Services</option>
-                <option value="5">Lodging</option>
-              </select>
-              <a href="searchResults.html"><button id="search" class="btn btn-primary btn-embossed">Find it</button></a>
+            <div class="form-group" role="form">
+              <input type="text" placeholder="Full Name" class="form-control">
+              <input type="text" placeholder="Email" class="form-control">
+              <input type="text" placeholder="Password" class="form-control">
+              <a href="dashboard.html"><button id="signUp" class="btn btn-primary btn-embossed btn-wide btn-lg">Sign Up</button></a>
             </div>
           </p>
         </div>
