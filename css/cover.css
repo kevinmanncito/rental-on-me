@@ -121,7 +121,7 @@ body {
  * Navbar 
  */
 
- .navbar {margin-bottom: 0; max-height: 53px;}
+ .navbar {margin-bottom: 0;}
  .navbar-default {margin-bottom: 0;}
  .navbar-collapse {border-radius: 0 !important;}
  .logo {
