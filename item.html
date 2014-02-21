@@ -43,51 +43,44 @@
           <div class="form-group">
             <input type="password" placeholder="Password" class="form-control">
           </div>
-          <a href="index.html"><button class="btn btn-primary btn-embossed btn-login">Sign in</button></a>
+          <a href="index.html"><button class="btn btn-primary btn-embossed">Sign in</button></a>
         </div>
       </div>
     </div><!-- /.navbar-collapse -->
   </nav><!-- /navbar -->
   
+  <div class="jumbotron">
+    <div class="container caption">
+      <h2>5001 Results for: "cars and submarines"</h2>
+      <p class="lead">
+        <div class="navbar-form" role="form">
+          <div class="form-group">
+            <input type="text" placeholder="What are you looking for?" class="input-hg form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Location or zip code" class="input-hg form-control">
+          </div>
+          <select multiple="multiple">
+            <option value="0" selected>All Categories</option>
+            <option value="1">Tools</option>
+            <option value="2">Sports Equipment</option>
+            <option value="3">Electronics</option>
+            <option value="4">Services</option>
+            <option value="5">Lodging</option>
+          </select>
+          <a href="searchResults.html"><button id="search" class="btn btn-primary btn-embossed">Find it</button></a>
+        </div>
+      <p>
+    </div>
+  </div>
 
-
-  <div class="container-fluid search-container">
+  <div class="container">
     <!-- Example row of columns -->
     <div class="row">
-      <div class="col-md-6 sidebar">
-        <div class="fixed-col">
-          <img src="images/map.png" class="img-responsive thumbnail"alt="">
-        </div>
+      <div class="col-md-6">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&sensor=false" class="img-responsive thumbnail"alt="">
       </div>
       <div class="col-md-6">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="jumbotron">
-              <div class="caption">
-                <h2>5001 Results for: "cars and submarines"</h2>
-                <p class="lead">
-                  <div class="navbar-form" role="form">
-                    <div class="form-group">
-                      <input type="text" placeholder="What are you looking for?" class="input-hg form-control">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" placeholder="Location or zip code" class="input-hg form-control">
-                    </div>
-                    <select multiple="multiple">
-                      <option value="0" selected>All Categories</option>
-                      <option value="1">Tools</option>
-                      <option value="2">Sports Equipment</option>
-                      <option value="3">Electronics</option>
-                      <option value="4">Services</option>
-                      <option value="5">Lodging</option>
-                    </select>
-                    <a href="searchResults.html"><button id="search" class="btn btn-primary btn-embossed">Find it</button></a>
-                  </div>
-                <p>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="row">
           <div class="col-sm-12 search-result">
             <h5><a href="item.html">Submarine</a></h5>
