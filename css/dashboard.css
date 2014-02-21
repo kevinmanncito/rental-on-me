@@ -16,6 +16,18 @@ body {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
+ .logo {
+  width: 150px;
+  max-height: 53px;
+ }
+.navbar-logo {
+  float: left;
+  height: 53px;
+  padding: 8px 21px 8px 21px;
+}
+.navbar-logo:hover {
+  box-shadow:inset 0px 0px 85px rgba(0,0,0,.25);
+}
 
 
 /*
