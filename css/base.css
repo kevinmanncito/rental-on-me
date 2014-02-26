@@ -18,6 +18,12 @@ a:hover {
   background-color: #fff;
   border: 1px solid #fff;
 }
+.btn-social {
+  padding-left: 37px;
+}
+.btn-social :first-child {
+  top: 5px;
+}
 
 
 /*
