@@ -24,6 +24,9 @@ a:hover {
 .btn-social :first-child {
   top: 5px;
 }
+.btn-nav {
+  margin-top: 5px;
+}
 
 
 /*
@@ -170,6 +173,7 @@ input {margin-bottom: 5px;}
 
 
 
+
 /*
  * Footer
  */
@@ -209,6 +213,10 @@ input {margin-bottom: 5px;}
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+  .sign-up-form {
+   padding-left: 100px;
+   padding-right: 100px;
   }
 }
 
@@ -276,6 +284,9 @@ h5 a:hover {
 }
 @media (max-width: 768px) {
   h2{font-size: 24px;}
+  .btn-nav {
+    margin-left: 10px;
+  }
 }
 .search-container {
   margin-top: 15px;
@@ -297,7 +308,7 @@ h5 a:hover {
     bottom: 0;
     z-index: 1000;
     display: block;
-    padding: 70px 20px 20px;
+    margin-top: 65px;
   }
 }
 
@@ -318,7 +329,7 @@ footer {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 800px;
   }
 }
 
