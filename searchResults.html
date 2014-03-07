@@ -10,6 +10,7 @@
 
     <!-- Loading Flat UI -->
     <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
 
     <link href="css/base.css" rel="stylesheet">
 
@@ -74,29 +75,23 @@
       <div class="col-md-6">
         <div class="row">
           <div class="col-sm-12">
-            <div class="jumbotron">
-              <div class="caption">
-                <h2>5001 Results for: "cars and submarines"</h2>
-                <p class="lead">
-                  <div class="navbar-form" role="form">
-                    <div class="form-group">
-                      <input type="text" placeholder="What are you looking for?" class="input-hg form-control">
-                    </div>
-                    <div class="form-group">
-                      <input type="text" placeholder="Location or zip code" class="input-hg form-control">
-                    </div>
-                    <select multiple="multiple">
-                      <option value="0" selected>All Categories</option>
-                      <option value="1">Tools</option>
-                      <option value="2">Sports Equipment</option>
-                      <option value="3">Electronics</option>
-                      <option value="4">Services</option>
-                      <option value="5">Lodging</option>
-                    </select>
-                    <a href="searchResults.html"><button id="search" class="btn btn-primary btn-embossed">Find it</button></a>
-                  </div>
-                <p>
+            <div id="slider" class="ui-slider"></div>
+            <div class="navbar-form" role="form">
+              <div class="form-group">
+                <input type="text" placeholder="What are you looking for?" class="input-hg form-control">
               </div>
+              <div class="form-group">
+                <input type="text" placeholder="Location or zip code" class="input-hg form-control">
+              </div>
+              <select multiple="multiple">
+                <option value="0" selected>All Categories</option>
+                <option value="1">Tools</option>
+                <option value="2">Sports Equipment</option>
+                <option value="3">Electronics</option>
+                <option value="4">Services</option>
+                <option value="5">Lodging</option>
+              </select>
+              <a href="searchResults.html"><button id="search" class="btn btn-primary btn-embossed">Find it</button></a>
             </div>
           </div>
         </div>
@@ -168,7 +163,8 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap-select.js"></script>
   <script src="js/bootstrap-switch.js"></script>
-  <script src="js/flatui-checkbox.js"></script>
+  <script src="js/bootstrap-switch.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/flatui-radio.js"></script>
   <script src="js/jquery.tagsinput.js"></script>
   <script src="js/jquery.placeholder.js"></script>
