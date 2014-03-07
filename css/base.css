@@ -170,8 +170,9 @@ input {margin-bottom: 5px;}
 /*
  * Content
  */
-
-
+.text-muted {
+  color: #707070;
+}
 
 
 
@@ -216,8 +217,8 @@ input {margin-bottom: 5px;}
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
   .sign-up-form {
-   padding-left: 100px;
-   padding-right: 100px;
+   padding-left: 175px;
+   padding-right: 175px;
   }
 }
 
