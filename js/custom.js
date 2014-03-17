@@ -1,6 +1,8 @@
 $(document).ready(function(){
+  // Multiple select
   $("select").selectpicker({style: 'btn-embossed btn-primary', menuStyle: 'dropdown-inverse'});
 
+  // Price slider
   var $slider = $("#slider");
   if ($slider.length > 0) {
     $slider.slider({
@@ -12,5 +14,16 @@ $(document).ready(function(){
     });
   }
 
-  $('.datepicker').datepicker();
+  // Datepicker
+  $("#datepicker").datepicker();
+  $("#datepicker2").datepicker();
+
+  // Tooltips
+  var options = {
+    animation: true,
+    placement: 'bottom',
+    trigger: 'hover focus'
+  };
+  $(".my-tooltip").tooltip(options);
+
 });

@@ -283,7 +283,7 @@ input {margin-bottom: 5px;}
   background-position: center center;
 }
 .outdoor {
-  background: url('../images/boots.jpg');
+  background: url('../images/hiking.jpg');
   background-size: 100%;
   background-size: cover;
   background-position: center center;
@@ -388,6 +388,44 @@ h5 a:hover {
   margin-top: 15px;
   width: 98%;
 }
+.search-area .col-sm-12 {
+  border-bottom: solid 1px #eee;
+}
+.search-btn {
+  margin-top: 15px;
+}
+.min-price {
+  text-align: center;
+  float: left;
+  width: 75px;
+}
+.min-label {
+  float: left;
+  padding-right: 5px;
+}
+.max-price {
+  text-align: center;
+  float: right;
+  width: 75px;
+}
+.max-label {
+  float: right;
+  padding-right: 5px;
+}
+.price-container {
+  padding-bottom: 10px;
+}
+
+/* Customize the Jquery UI Datepicker 
+-------------------------------------------------- */
+.ui-datepicker {
+  background-color: rgba(15,25,25,.75);
+  color: white;
+  z-index: 100 !important;
+}
+.ui-datepicker a:hover {
+  color: #16a085;
+}
 
 /*
  * Sidebar
@@ -406,8 +444,57 @@ h5 a:hover {
     z-index: 1000;
     display: block;
     margin-top: 65px;
+    width: 45%;
   }
 }
+.map {
+  width: 100%;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */ 
+.carousel {
+  height: 200px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 190px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: auto;
+}
+.search-item .thumbnail{
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.item-info {
+  padding: 1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-bottom: 0;
+}
+.item-info img {
+  width: 50px;
+  height: 40px;
+}
+.item-info .price {
+  float: right;
+  font-size: 24px;
+}
+
 
 /* Footer
 ------------------------- */

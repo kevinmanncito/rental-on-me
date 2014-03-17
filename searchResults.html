@@ -10,7 +10,7 @@
 
     <!-- Loading Flat UI -->
     <link href="css/flat-ui.css" rel="stylesheet">
-    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/jquery-ui-datepicker.css" rel="stylesheet">
 
     <link href="css/base.css" rel="stylesheet">
 
@@ -39,9 +39,10 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="dashboard.html">How do I rent stuff?</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Getting Started</a></li>
+            <li><a href="#">How do I create an account?</a></li>
+            <li><a href="#">How do I rent my stuff?</a></li>
+            <li><a href="#">How do I find stuff to rent?</a></li>
             <li class="divider"></li>
             <li><a href="#">All FAQs</a></li>
           </ul>
@@ -69,13 +70,17 @@
     <div class="row">
       <div class="col-md-6 sidebar-wrapper">
         <div class="sidebar">
-          <img src="images/map.png" class="img-responsive thumbnail"alt="">
+          <img src="images/map.png" class="img-responsive map thumbnail"alt="">
         </div>
       </div>
       <div class="col-md-6">
-        <div class="row">
+
+        <!-- SEARCH AREA -->
+        <div class="row search-area">
+
+          <!-- FILTERS -->
           <div class="col-sm-12">
-            <div id="slider" class="ui-slider"></div>
+            <h4>Search Options</h4>
             <div class="navbar-form" role="form">
               <div class="form-group">
                 <input type="text" placeholder="What are you looking for?" class="input-hg form-control">
@@ -91,62 +96,287 @@
                 <option value="4">Services</option>
                 <option value="5">Lodging</option>
               </select>
-              <a href="searchResults.html"><button id="search" class="btn btn-primary btn-embossed">Find it</button></a>
+            </div>
+          </div> <!-- /filters -->
+          
+          <!-- RENTAL PERIOD -->
+          <div class="col-sm-12">
+            <h4>Rental Period</h4>
+            <div class="navbar-form" role="form">
+              <div class="form-group">
+                <input type="text" placeholder="Begin date" class="input-hg form-control" id="datepicker">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="End date" class="input-hg form-control" id="datepicker2">
+              </div>
+            </div>
+          </div><!-- /rental period -->
+          
+          <!-- PRICE SLIDER -->
+          <div class="col-sm-12 price-container">
+            <h4>Price Range</h4>
+            <div id="slider" class="ui-slider"></div>
+            <div class="col-sm-12" style="border: none;">
+              <span class="min-label">Minimum:</span>
+              <input type="text" placeholder="0" class="input-sm form-control min-price">
+              <input type="text" placeholder="1000" class="input-sm form-control max-price">
+              <span class="max-label">Maximum:</span>
+            </div>
+          </div> <!-- /price slider -->
+          
+          <!-- SUBMIT SEARCH -->
+          <div class="col-sm-12" style="border-bottom: none;">
+            <button id="search" class="btn btn-primary btn-embossed search-btn">Find it</button>
+          </div> <!-- /submit search -->
+          
+        </div> <!-- /end of search area -->
+
+        <div class="row">
+          <div class="col-sm-4 search-item">
+            <h5><a href="item.html">Submarine</a></h5>
+            <div id="myCarousel1" class="carousel slide thumbnail" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive" src="images/stockvault-blue-boat115064.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-airplane112434.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-hummer-toy110078.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="well item-info">
+              <a href="" title="User: kevinrmann" class="my-tooltip">
+                <img src="images/profile.jpg" alt="Generic placeholder thumbnail">
+              </a>
+              <span class="price">$50/day</span>
+            </div>
+          </div>
+          <div class="col-sm-4 search-item">
+            <h5><a href="item.html">Baseball Bat</a></h5>
+            <div id="myCarousel2" class="carousel slide thumbnail" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive" src="images/stockvault-baseball-glove105487.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-boat115064.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-hummer-toy110078.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel2" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel2" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="well item-info">
+              <a href="" title="User: kevinrmann" class="my-tooltip">
+                <img src="images/profile.jpg" alt="Generic placeholder thumbnail">
+              </a>
+              <span class="price">$50/day</span>
+            </div>
+          </div>
+          <div class="col-sm-4 search-item">
+            <h5><a href="item.html">Toy Car</a></h5>
+            <div id="myCarousel3" class="carousel slide thumbnail" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive" src="images/stockvault-toy-car124266.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-boat115064.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-hummer-toy110078.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel3" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel3" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="well item-info">
+              <a href="" title="User: kevinrmann" class="my-tooltip">
+                <img src="images/profile.jpg" alt="Generic placeholder thumbnail">
+              </a>
+              <span class="price">$50/day</span>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-12 search-result">
-            <h5><a href="item.html">Submarine</a></h5>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <div class="col-sm-4 search-item">
+            <h5><a href="item.html">Shop Vac</a></h5>
+            <div id="myCarousel9" class="carousel slide thumbnail" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive" src="images/stockvault-grey-dust-bin110643.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-boat115064.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-hummer-toy110078.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel9" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel9" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="well item-info">
+              <a href="" title="User: kevinrmann" class="my-tooltip">
+                <img src="images/profile.jpg" alt="Generic placeholder thumbnail">
+              </a>
+              <span class="price">$50/day</span>
+            </div>
+          </div>
+          <div class="col-sm-4 search-item">
+            <h5><a href="item.html">Limo Ride</a></h5>
+            <div id="myCarousel4" class="carousel slide thumbnail" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive" src="images/stockvault-tata-manza-car124969.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-boat115064.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-hummer-toy110078.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel4" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel4" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="well item-info">
+              <a href="" title="User: kevinrmann" class="my-tooltip">
+                <img src="images/profile.jpg" alt="Generic placeholder thumbnail">
+              </a>
+              <span class="price">$50/day</span>
+            </div>
+          </div>
+          <div class="col-sm-4 search-item">
+            <h5><a href="item.html">Puppy</a></h5>
+            <div id="myCarousel5" class="carousel slide thumbnail" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive" src="images/stockvault-dog109704.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-boat115064.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-hummer-toy110078.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel5" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel5" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="well item-info">
+              <a href="" title="User: kevinrmann" class="my-tooltip">
+                <img src="images/profile.jpg" alt="Generic placeholder thumbnail">
+              </a>
+              <span class="price">$50/day</span>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-12">
-            <h5><a href="item.html">Submarine</a></h5>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <div class="col-sm-4 search-item">
+            <h5><a href="item.html">Jig Saw</a></h5>
+            <div id="myCarousel6" class="carousel slide thumbnail" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive" src="images/stockvault-craftsmen-creates-wooden-owl-with-chains128882.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-boat115064.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-hummer-toy110078.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel6" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel6" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="well item-info">
+              <a href="" title="User: kevinrmann" class="my-tooltip">
+                <img src="images/profile.jpg" alt="Generic placeholder thumbnail">
+              </a>
+              <span class="price">$50/day</span>
+            </div>
+          </div>
+          <div class="col-sm-4 search-item">
+            <h5><a href="item.html">Tools</a></h5>
+            <div id="myCarousel7" class="carousel slide thumbnail" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive" src="images/stockvault-wrench100065.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-boat115064.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-hummer-toy110078.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel7" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel7" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="well item-info">
+              <a href="" title="User: kevinrmann" class="my-tooltip">
+                <img src="images/profile.jpg" alt="Generic placeholder thumbnail">
+              </a>
+              <span class="price">$50/day</span>
+            </div>
+          </div>
+          <div class="col-sm-4 search-item">
+            <h5><a href="item.html">Wedding Dress</a></h5>
+            <div id="myCarousel8" class="carousel slide thumbnail" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive" src="images/stockvault-minolta-camera115080.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-boat115064.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="images/stockvault-blue-hummer-toy110078.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel8" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#myCarousel8" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="well item-info">
+              <a href="" title="User: kevinrmann" class="my-tooltip">
+                <img src="images/profile.jpg" alt="Generic placeholder thumbnail">
+              </a>
+              <span class="price">$50/day</span>
+            </div>
           </div>
         </div>
+        
         <div class="row">
-          <div class="col-sm-12">
-            <h5><a href="item.html">Submarine</a></h5>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <h5><a href="item.html">Submarine</a></h5>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
+          <div class="pagination col-md-12">
+            <ul>
+              <li class="previous">
+                <a href="#" class="fui-arrow-left"></a>
+              </li>
 
-    <div class="row">
-      <div class="pagination col-md-12">
-        <ul>
-          <li class="previous">
-            <a href="#" class="fui-arrow-left"></a>
-          </li>
+              <li class="active"><a href="#fakelink">1</a></li>
+              <li><a href="#fakelink">2</a></li>
+              <li><a href="#fakelink">3</a></li>
+              <li><a href="#fakelink">4</a></li>
+              <li><a href="#fakelink">5</a></li>
+              
+              <li class="next">
+                <a href="#" class="fui-arrow-right"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-          <li class="active"><a href="#fakelink">1</a></li>
-          <li><a href="#fakelink">2</a></li>
-          <li><a href="#fakelink">3</a></li>
-          <li><a href="#fakelink">4</a></li>
-          <li><a href="#fakelink">5</a></li>
-          
-          <li class="next">
-            <a href="#" class="fui-arrow-right"></a>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
-
 
   <!-- FOOTER -->
   <footer>
@@ -160,11 +390,11 @@
   <script src="js/jquery-1.8.3.min.js"></script>
   <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/jquery-ui-datepicker.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap-select.js"></script>
   <script src="js/bootstrap-switch.js"></script>
   <script src="js/bootstrap-switch.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/flatui-radio.js"></script>
   <script src="js/jquery.tagsinput.js"></script>
   <script src="js/jquery.placeholder.js"></script>
