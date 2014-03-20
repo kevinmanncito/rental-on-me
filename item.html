@@ -66,45 +66,69 @@
 
   <div class="container item-container">
     <div id="content">
-      
+      <div class="row">
+        <div class="col-md-12 ">
+          <h2 class="item-title">Demo Item</h2>
+        </div>
+      </div>
       <div class="row">
         <!-- Main content column -->
-        <div class="col-lg-8 well">
+        <div class="col-md-8 well">
 
           <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-            <li class="active"><a href="#red" data-toggle="tab">Red</a></li>
-            <li><a href="#pictures" data-toggle="tab">Pictures</a></li>
-            <li><a href="#yellow" data-toggle="tab">Yellow</a></li>
-            <li><a href="#green" data-toggle="tab">Green</a></li>
-            <li><a href="#blue" data-toggle="tab">Blue</a></li>
+            <li class="active"><a href="#pictures" data-toggle="tab">Pictures</a></li>
+            <li><a href="#description" data-toggle="tab">Description</a></li>
+            <li><a href="#availability" data-toggle="tab">Availability</a></li>
           </ul>
           <div id="my-tab-content" class="tab-content">
-            <div class="tab-pane active" id="red">
-              <h1>Red</h1>
-              <p>red red red red red red</p>
+            <div class="tab-pane active" id="pictures">
+              <img class="thumbnail img-responsive display-img" src="images/exaple-image.jpg" alt="">
+              <div>
+                <a href="" id="soccer"><img class="my-thumbnail thumbnail" src="images/stockvault-soccer-ball119859.jpg" alt=""></a>
+                <a href="" id="boat"><img class="my-thumbnail thumbnail" src="images/stockvault-blue-boat115064.jpg" alt=""></a>
+                <a href="" id="wrench"><img class="my-thumbnail thumbnail" src="images/stockvault-wrench100065.jpg" alt=""></a>
+              </div>
             </div>
-            <div class="tab-pane" id="pictures">
-              <h1>Pictures</h1>
-              <p>orange orange orange orange orange</p>
+            <div class="tab-pane" id="description">
+              <h3>Description</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget pharetra purus, interdum eleifend felis. Vivamus rhoncus posuere odio in faucibus. Ut a turpis dapibus, gravida ipsum ut, fermentum eros. Integer in lobortis justo. Curabitur tristique sit amet enim et vestibulum. Ut mattis sem id lectus tincidunt, sit amet ultricies magna vehicula. Vivamus ac nunc sed quam adipiscing vulputate sit amet a nisl. Suspendisse lorem turpis, porttitor aliquet velit in, pharetra dapibus libero. Nullam ut nulla sit amet felis rhoncus sagittis. Nullam laoreet id mauris in sodales. Suspendisse et molestie turpis. Aenean mattis vehicula sapien. Fusce nec sollicitudin mi, sed posuere justo. Curabitur posuere auctor cursus. Pellentesque scelerisque rhoncus ante, vitae fermentum magna vehicula in.
+              </p>
             </div>
-            <div class="tab-pane" id="yellow">
-              <h1>Yellow</h1>
-              <p>yellow yellow yellow yellow yellow</p>
-            </div>
-            <div class="tab-pane" id="green">
-              <h1>Green</h1>
-              <p>green green green green green</p>
-            </div>
-            <div class="tab-pane" id="blue">
-              <h1>Blue</h1>
-              <p>blue blue blue blue blue</p>
+            <div class="tab-pane" id="availability">
+              <h3>Availability</h3>
+              <p><iframe src="https://www.google.com/calendar/embed?src=e287k49pr4o4o4hk3vibc45sgk%40group.calendar.google.com&ctz=America/Denver" style="border: 0" width="100%" height="450" frameborder="0" scrolling="no"></iframe></p>
             </div>
           </div>
 
         </div>
         
         <!-- Right sidebar -->
-        <div class="col-lg-4">Right sidebard</div>
+        <div class="col-md-4">
+
+          <div class="row">
+            <div class="col-sm-12 sidebar-item">
+
+              <h4 class="left">$50</h4>
+
+              <select class="right">
+                <option value="0">Per Day</option>
+                <option value="1">Per Week</option>
+                <option value="1">Per Month</option>
+              </select>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 sidebar-item">
+              <img src="images/profile.jpg" class="img-responsive thumbnail" alt="Generic placeholder thumbnail">
+              <h5 class="center">Kevin</h5>
+              <p class="center"><a class="btn btn-default" href="#" role="button">View renter profile &raquo;</a></p>
+            </div>
+          </div>
+        
+        </div>
       </div>
     </div>
   </div>

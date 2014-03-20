@@ -39,6 +39,15 @@ body {
 }
 body {
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.center {
+  text-align: center;
+}
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -359,9 +368,37 @@ input {margin-bottom: 5px;}
 /* Item view
 ------------------------- */
 .item-container {
-  margin-top: 40px;
+  margin-top: 20px;
   min-height: 100%;
-  margin-bottom: -40px;
+  margin-bottom: -20px;
+}
+#tabs .active a {
+  color: white;
+  background-color: #34495e;
+}
+#tabs a {
+  color: #34495e;
+}
+.item-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.tab-content .tab-pane {
+  margin-top: 10px;
+}
+.my-thumbnail {
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+.sidebar-item h4 {
+  margin-top: 0;
+}
+.sidebar-item h5 {
+  margin-bottom: 0;
+}
+.sidebar-item {
+  margin-bottom: 10px;
 }
 
 /* Jumbotron
