@@ -32,15 +32,16 @@
       </a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-01">
-      <ul class="nav navbar-nav navbar-right">           
+      <ul class="nav navbar-nav navbar-right">
         <li><a href="signUp.html">Sign Up</a></li>
         <li><a href="dashboard.html">Login</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="dashboard.html">How do I rent stuff?</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Getting Started</a></li>
+            <li><a href="#">How do I create an account?</a></li>
+            <li><a href="#">How do I rent my stuff?</a></li>
+            <li><a href="#">How do I find stuff to rent?</a></li>
             <li class="divider"></li>
             <li><a href="#">All FAQs</a></li>
           </ul>
@@ -56,94 +57,54 @@
             <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
             <span class="input-group-btn">
               <button type="submit" class="btn"><span class="input-icon fui-search"></span></button>
-            </span>            
+            </span>
           </div>
-        </div>               
+        </div>
       </form> 
     </div> <!-- /.navbar-collapse -->
   </nav> <!-- /navbar -->
-  
-  <div class="jumbotron">
-    <div class="container caption">
-      <h2>5001 Results for: "cars and submarines"</h2>
-      <p class="lead">
-        <div class="navbar-form" role="form">
-          <div class="form-group">
-            <input type="text" placeholder="What are you looking for?" class="input-hg form-control">
-          </div>
-          <div class="form-group">
-            <input type="text" placeholder="Location or zip code" class="input-hg form-control">
-          </div>
-          <select multiple="multiple">
-            <option value="0" selected>All Categories</option>
-            <option value="1">Tools</option>
-            <option value="2">Sports Equipment</option>
-            <option value="3">Electronics</option>
-            <option value="4">Services</option>
-            <option value="5">Lodging</option>
-          </select>
-          <a href="searchResults.html"><button id="search" class="btn btn-primary btn-embossed">Find it</button></a>
-        </div>
-      <p>
-    </div>
-  </div>
 
-  <div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-6">
-        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&sensor=false" class="img-responsive thumbnail"alt="">
-      </div>
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-sm-12 search-result">
-            <h5><a href="#link">Submarine</a></h5>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <h5><a href="#link">Submarine</a></h5>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <h5><a href="#link">Submarine</a></h5>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <h5><a href="#link">Submarine</a></h5>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="container item-container">
+    <div id="content">
+      
+      <div class="row">
+        <!-- Main content column -->
+        <div class="col-lg-8 well">
 
-    <div class="row">
-      <div class="pagination col-md-12">
-        <ul>
-          <li class="previous">
-            <a href="#" class="fui-arrow-left"></a>
-          </li>
+          <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+            <li class="active"><a href="#red" data-toggle="tab">Red</a></li>
+            <li><a href="#pictures" data-toggle="tab">Pictures</a></li>
+            <li><a href="#yellow" data-toggle="tab">Yellow</a></li>
+            <li><a href="#green" data-toggle="tab">Green</a></li>
+            <li><a href="#blue" data-toggle="tab">Blue</a></li>
+          </ul>
+          <div id="my-tab-content" class="tab-content">
+            <div class="tab-pane active" id="red">
+              <h1>Red</h1>
+              <p>red red red red red red</p>
+            </div>
+            <div class="tab-pane" id="pictures">
+              <h1>Pictures</h1>
+              <p>orange orange orange orange orange</p>
+            </div>
+            <div class="tab-pane" id="yellow">
+              <h1>Yellow</h1>
+              <p>yellow yellow yellow yellow yellow</p>
+            </div>
+            <div class="tab-pane" id="green">
+              <h1>Green</h1>
+              <p>green green green green green</p>
+            </div>
+            <div class="tab-pane" id="blue">
+              <h1>Blue</h1>
+              <p>blue blue blue blue blue</p>
+            </div>
+          </div>
 
-          <li class="active"><a href="#fakelink">1</a></li>
-          <li><a href="#fakelink">2</a></li>
-          <li><a href="#fakelink">3</a></li>
-          <li><a href="#fakelink">4</a></li>
-          <li><a href="#fakelink">5</a></li>
-          <li><a href="#fakelink">6</a></li>
-
-          <li class="next">
-            <a href="#" class="fui-arrow-right"></a>
-          </li>
-        </ul>
+        </div>
+        
+        <!-- Right sidebar -->
+        <div class="col-lg-4">Right sidebard</div>
       </div>
     </div>
   </div>

@@ -26,4 +26,10 @@ $(document).ready(function(){
   };
   $(".my-tooltip").tooltip(options);
 
+  // Tabs
+  $('#myTab a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+
 });

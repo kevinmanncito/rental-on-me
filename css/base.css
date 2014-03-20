@@ -356,6 +356,14 @@ input {margin-bottom: 5px;}
   min-height: 100%;
 }
 
+/* Item view
+------------------------- */
+.item-container {
+  margin-top: 40px;
+  min-height: 100%;
+  margin-bottom: -40px;
+}
+
 /* Jumbotron
 ------------------------- */
 .jumbotron {
@@ -454,15 +462,26 @@ h5 a:hover {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */ 
-.carousel {
-  height: 200px;
-}
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
 }
-
+/* Carousel base class */ 
+.big-carousel {
+  height: 400px;
+}
+.big-carousel .item {
+  height: 400px;
+}
+.big-carousel .left {
+  margin-left: 15px;
+}
+.big-carousel .right {
+  margin-right: 15px;
+}
+.carousel {
+  height: 200px;
+}
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 190px;
