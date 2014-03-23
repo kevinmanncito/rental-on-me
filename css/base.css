@@ -364,6 +364,16 @@ input {margin-bottom: 5px;}
 .dashboard-container {
   min-height: 100%;
 }
+.placeholder img {
+  margin-bottom: 0;
+}
+.placeholder h4 {
+  margin-bottom: 0;
+}
+.block {
+  display: block;
+  margin-bottom: 20px;
+}
 
 /* Item view
 ------------------------- */

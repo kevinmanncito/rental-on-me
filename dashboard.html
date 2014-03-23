@@ -34,7 +34,19 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-01">
       <ul class="nav navbar-nav navbar-right">           
         <li><a href="signUp.html">Sign Up</a></li>
-        <li><a href="dashboard.html">Login</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">My Listings</a></li>
+            <li><a href="#">My Rentals</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Account</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help<b class="caret"></b></a>
           <ul class="dropdown-menu">
@@ -79,8 +91,8 @@
             <div class="collapse navbar-collapse" id="navbar-collapse-01">
               <ul class="nav navbar-nav">
                 <li><a href="dashboard.html">Inbox</a><span class="navbar-new">2</span></li>
-                <li><a href="dashboard.html">Rentals</a></li>
-                <li><a href="dashboard.html">Listings</a></li>
+                <li><a href="dashboard.html">My Listings</a></li>
+                <li><a href="dashboard.html">My Rentals</a></li>
                 <li><a href="dashboard.html">Profile</a></li>
                 <li><a href="dashboard.html">Account</a></li>
               </ul>
@@ -91,12 +103,29 @@
       </div>
       
       <div class="row placeholders">
+
         <div class="col-xs-6 col-sm-3 placeholder">
           <img src="images/profile.jpg" class="img-responsive thumbnail" alt="Generic placeholder thumbnail">
-          <h4>Kevin</h4>
-          <a href="dashboard.html"><span class="text-muted">Edit Profile</span></a>
+          <h4 class="center">Kevin</h4>
+          <a href="dashboard.html" class="center">
+            <span class="text-muted center block">Edit Profile</span>
+          </a>
+          <div class="well">
+            <h6>Verified Accounts:</h6>
+            <ul>
+              <li>Email: kevinrmann@gmail.com</li>
+              <li>Facebook: kevin</li>
+            </ul>
+          </div>
         </div>
+      
         <div class="col-sm-9 placeholder">
+          <div class="well">
+            <h4>Welcome!</h4>
+            <p>
+              In vestibulum felis eu nisl vehicula, quis euismod arcu mattis. Aenean elementum risus arcu, sed ullamcorper nibh faucibus a. Nunc ornare ante vehicula, rutrum risus eu, viverra ante. Integer auctor dolor quam, at consequat magna fermentum vitae. Integer at diam at felis ornare eleifend. Morbi vel rhoncus libero, sit amet accumsan velit. Integer suscipit magna leo, sed aliquet nulla viverra eget.
+            </p>
+          </div>
           <h4>Account Completion (40%)</h4>
           <div class="progress">
             <div class="progress-bar" style="width: 40%;"></div>
@@ -104,10 +133,18 @@
           <span class="text-muted">To complete account:</span>
           <div class="alert alert-info"><a href="dashboard.html" class="alert-link">List</a> an item</div>
           <div class="alert alert-info"><a href="dashboard.html" class="alert-link">Rent</a> an item</div>
-          <div class="alert alert-info">Add a <a href="dashboard.html" class="alert-link">card</a></div>
+          <div class="alert alert-info"><a href="dashboard.html" class="alert-link">Add</a> a card</div>
+          <div class="well">
+            <h4>Rental Tips</h4>
+            <p>
+              In vestibulum felis eu nisl vehicula, quis euismod arcu mattis. Aenean elementum risus arcu, sed ullamcorper nibh faucibus a. Nunc ornare ante vehicula, rutrum risus eu, viverra ante. Integer auctor dolor quam, at consequat magna fermentum vitae. Integer at diam at felis ornare eleifend. Morbi vel rhoncus libero, sit amet accumsan velit. Integer suscipit magna leo, sed aliquet nulla viverra eget.
+            </p>
+          </div>
         </div>
-      </div>
+        
       
+      </div>
+
       <hr class="dashboard-divider">
 
       <div class="row">
