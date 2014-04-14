@@ -21,7 +21,7 @@
     <![endif]-->
   </head>
 <body>
-  
+
   <nav class="navbar navbar-default navbar-embossed" role="navigation">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
@@ -78,80 +78,78 @@
 
   <div class="container dashboard-container">
     <div class="row">
-      <div class="row nav-space">
-        <div class="col-sm-12">
-          
-          <nav class="navbar navbar-inverse" role="navigation">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
-                <span class="sr-only">Toggle navigation</span>
-              </button>
-              <a class="navbar-brand" href="dashboard.html">Dashboard</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-01">
-              <ul class="nav navbar-nav">
-                <li><a href="dashboard.html">Inbox</a><span class="navbar-new">2</span></li>
-                <li><a href="myListings.html">My Listings</a></li>
-                <li><a href="dashboard.html">My Rentals</a></li>
-                <li><a href="dashboard.html">Profile</a></li>
-                <li><a href="dashboard.html">Account</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </nav><!-- /navbar -->
-
-        </div>
-      </div>
       
       <div class="row placeholders">
 
         <div class="col-xs-6 col-sm-3 placeholder">
           <img src="images/profile.jpg" class="img-responsive thumbnail" alt="Generic placeholder thumbnail">
           <h4 class="center">Kevin</h4>
-          <a href="dashboard.html" class="center">
-            <span class="text-muted center block">Edit Profile</span>
-          </a>
-          <div class="well">
-            <h6>Verified Accounts:</h6>
-            <ul>
-              <li>Email: kevinrmann@gmail.com</li>
-              <li>Facebook: kevin</li>
-            </ul>
-          </div>
+          <hr class="dashboard-divider">
+          <ul id="tabs" class="nav nav-pills nav-stacked" data-tabs="tabs">
+            <li class="active"><a href="#calendar" data-toggle="tab">Calendar</a></li>
+            <li><a href="#pricing" data-toggle="tab">Pricing</a></li>
+            <li><a href="#overview" data-toggle="tab">Overview</a></li>
+            <li><a href="#photos" data-toggle="tab">Photos</a></li>
+            <li><a href="#location" data-toggle="tab">Location</a></li>
+            <li><a href="#listingDetails" data-toggle="tab">Listing Details</a></li>
+          </ul>
         </div>
-      
+
         <div class="col-sm-9 placeholder">
-          <div class="well">
-            <h4>Welcome!</h4>
-            <p>
-              In vestibulum felis eu nisl vehicula, quis euismod arcu mattis. Aenean elementum risus arcu, sed ullamcorper nibh faucibus a. Nunc ornare ante vehicula, rutrum risus eu, viverra ante. Integer auctor dolor quam, at consequat magna fermentum vitae. Integer at diam at felis ornare eleifend. Morbi vel rhoncus libero, sit amet accumsan velit. Integer suscipit magna leo, sed aliquet nulla viverra eget.
-            </p>
-          </div>
-          <h4>Account Completion (40%)</h4>
-          <div class="progress">
-            <div class="progress-bar" style="width: 40%;"></div>
-          </div>
-          <span class="text-muted">To complete account:</span>
-          <div class="alert alert-info"><a href="dashboard.html" class="alert-link">List</a> an item</div>
-          <div class="alert alert-info"><a href="dashboard.html" class="alert-link">Rent</a> an item</div>
-          <div class="alert alert-info"><a href="dashboard.html" class="alert-link">Add</a> a card</div>
-          <div class="well">
-            <h4>Rental Tips</h4>
-            <p>
-              In vestibulum felis eu nisl vehicula, quis euismod arcu mattis. Aenean elementum risus arcu, sed ullamcorper nibh faucibus a. Nunc ornare ante vehicula, rutrum risus eu, viverra ante. Integer auctor dolor quam, at consequat magna fermentum vitae. Integer at diam at felis ornare eleifend. Morbi vel rhoncus libero, sit amet accumsan velit. Integer suscipit magna leo, sed aliquet nulla viverra eget.
-            </p>
+          <div id="my-tab-content" class="tab-content list-item-tabs">
+
+            <div class="tab-pane active" id="calendar">
+              <h3>Calendar</h3>
+              <div class="well">
+                When is your listing available?
+              </div>
+              <p>Always <input type="radio" class=""></p>
+              <p>Sometimes <input type="radio" class=""></p>
+              <p>One Time <input type="radio" class=""></p>
+            </div>
+
+            <div class="tab-pane" id="pricing">
+              <h3>Pricing</h3>
+              <div class="well">
+                How much is your rental?
+              </div>
+            </div>
+
+            <div class="tab-pane" id="overview">
+              <h3>Overview</h3>
+              <div class="well">
+                Please provide an overview of your rental.
+              </div>
+            </div>
+
+            <div class="tab-pane" id="photos">
+              <h3>Photos</h3>
+              <div class="well">
+                People love photos, upload as many as you can!
+              </div>
+            </div>
+
+            <div class="tab-pane" id="location">
+              <h3>Location</h3>
+              <div class="well">
+                Where is this rental located?
+              </div>
+            </div>
+
+            <div class="tab-pane" id="listingDetails">
+              <h3>Listing Details</h3>
+              <div class="well">
+                Please provide some additional details.
+              </div>
+            </div>
+
           </div>
         </div>
-        
-      
+
       </div>
 
       <hr class="dashboard-divider">
 
-      <div class="row">
-        <div class="col-sm-12">
-        </div>
-      </div>
- 
     </div>
   </div>
 

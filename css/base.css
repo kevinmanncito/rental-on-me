@@ -362,6 +362,7 @@ input {margin-bottom: 5px;}
 /* Dashboard
 ------------------------- */
 .dashboard-container {
+  margin-top: 20px;
   min-height: 100%;
 }
 .placeholder img {
@@ -373,6 +374,9 @@ input {margin-bottom: 5px;}
 .block {
   display: block;
   margin-bottom: 20px;
+}
+.list-item-tabs h3 {
+  margin-top: 0;
 }
 
 /* Item view
