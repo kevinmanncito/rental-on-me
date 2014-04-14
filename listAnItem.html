@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Rental On Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- A little bit of jquery ui... I hope -->
+    <link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet">
 
     <!-- Loading Bootstrap -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -78,7 +81,6 @@
 
   <div class="container dashboard-container">
     <div class="row">
-      
       <div class="row placeholders">
 
         <div class="col-xs-6 col-sm-3 placeholder">
@@ -93,6 +95,8 @@
             <li><a href="#location" data-toggle="tab">Location</a></li>
             <li><a href="#listingDetails" data-toggle="tab">Listing Details</a></li>
           </ul>
+          <hr class="dashboard-divider">
+          <p>Just <a href="#" class="my-link">4 more</a> steps</p>
         </div>
 
         <div class="col-sm-9 placeholder">
@@ -103,9 +107,18 @@
               <div class="well">
                 When is your listing available?
               </div>
-              <p>Always <input type="radio" class=""></p>
-              <p>Sometimes <input type="radio" class=""></p>
-              <p>One Time <input type="radio" class=""></p>
+              <label class="radio">
+                <input type="radio" name="group1" value="1" data-toggle="radio">
+                Always
+              </label>
+              <label class="radio">
+                <input type="radio" name="group1" value="2" data-toggle="radio">
+                Sometimes
+              </label>
+              <label class="radio">
+                <input type="radio" name="group1" value="2" data-toggle="radio">
+                One Time
+              </label>
             </div>
 
             <div class="tab-pane" id="pricing">
@@ -113,12 +126,29 @@
               <div class="well">
                 How much is your rental?
               </div>
+              <div class="form-group small-input">
+                <div class="input-group">
+                  <span class="input-group-addon">$</span>
+                  <input type="text" class="form-control" placeholder="Price">
+                </div>
+              </div>
+              
+              <label for="currency">Currency:</label><br>
+              <select id="currency">
+                <option value="0">USD</option>
+                <option value="1">CAD</option>
+              </select>
+
             </div>
 
             <div class="tab-pane" id="overview">
               <h3>Overview</h3>
               <div class="well">
                 Please provide an overview of your rental.
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Title">
+                <textarea name="summary" id="summary" class="form-control" cols="30" rows="10" placeholder="Summary"></textarea>
               </div>
             </div>
 
@@ -127,12 +157,19 @@
               <div class="well">
                 People love photos, upload as many as you can!
               </div>
+              <button class="btn btn-primary btn-embossed">Add photos</button>
             </div>
 
             <div class="tab-pane" id="location">
               <h3>Location</h3>
               <div class="well">
-                Where is this rental located?
+                Where is this rental located? Your exact address is private and only shared with renters after confirming a rental.
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Street address">
+                <input type="text" class="form-control" placeholder="City">
+                <input type="text" class="form-control" placeholder="Zip">
+                <input type="text" class="form-control" placeholder="State">
               </div>
             </div>
 
@@ -141,14 +178,52 @@
               <div class="well">
                 Please provide some additional details.
               </div>
+              <div class="navbar-form left-align" role="form">
+                <div class="form-group">
+                  <select id="category">
+                    <option value="0">Select a category</option>
+                    <option value="1">Tools</option>
+                    <option value="2">Sports Equipment</option>
+                    <option value="3">Electronics</option>
+                    <option value="4">Services</option>
+                    <option value="5">Lodging</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input type="text" placeholder="Quantity" class="input-tiny form-control">
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea name="summary" id="summary" class="form-control" cols="30" rows="10" placeholder="Message to future renters"></textarea>
+                <textarea name="summary" id="summary" class="form-control" cols="30" rows="10" placeholder="Cancellation policy"></textarea>
+              </div>
             </div>
-
+          
           </div>
         </div>
 
       </div>
 
       <hr class="dashboard-divider">
+
+    </div>
+  </div>
+
+  <!-- Dialog -->
+  <div id="dialog-modal" title="List Your Rental Item">
+    <p>Rental On Me allows you to make money renting out your belongings.</p>
+    <div class="form-group">
+      <select id="category">
+        <option value="0">Select a category</option>
+        <option value="1">Tools</option>
+        <option value="2">Sports Equipment</option>
+        <option value="3">Electronics</option>
+        <option value="4">Services</option>
+        <option value="5">Lodging</option>
+      </select>
+      <input type="text" placeholder="Quantity" class="small-input form-control">
+      <label for="location">Location:</label><br>
+      <input type="text" placeholder="City, State, Zip Code" class="form-control">
 
     </div>
   </div>
@@ -164,6 +239,7 @@
   <!-- Load JS here for greater good =============================-->
   <script src="js/jquery-1.8.3.min.js"></script>
   <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap-select.js"></script>
@@ -172,6 +248,7 @@
   <script src="js/flatui-radio.js"></script>
   <script src="js/jquery.tagsinput.js"></script>
   <script src="js/jquery.placeholder.js"></script>
-  <script src="js/custom.js"></script>
+  <!-- // <script src="js/custom.js"></script> -->
+  <script src="js/listItem.js"></script>
 </body>
 </html>

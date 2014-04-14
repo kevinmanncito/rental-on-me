@@ -26,4 +26,7 @@ $(document).ready(function(){
   };
   $(".my-tooltip").tooltip(options);
 
+  // Radio buttons
+  $(':radio').radio();
+
 });
